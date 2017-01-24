@@ -1101,6 +1101,9 @@ article.news:after {
 #footer {
 	background: url(../images/footer_bg2.jpg) no-repeat bottom left;
 	width: 100%;
+}
+
+.region-footer {
 	padding: 25px 0 50px 0;
 }
 

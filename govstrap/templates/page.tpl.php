@@ -126,6 +126,19 @@
 
 <?php if (!empty($page['footer'])): ?>
   <footer id="footer" class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
+    <div class="footer-container"><?php print render($page['footer']); ?></div>
+    <div id="footer-nav">
+      <div class="container">
+        <p>Copyright © Commonwealth of Australia</p>
+        <nav role="navigation">
+          <div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://agedcarecomplaints-wp.local/sitemap/">Sitemap</a></li>
+              <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://agedcarecomplaints-wp.local/accessibility/">Accessibility</a></li>
+              <li id="menu-item-243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243"><a href="http://agedcarecomplaints-wp.local/copyright-disclaimer/">Copyright</a></li>
+              <li id="menu-item-1346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346"><a href="http://agedcarecomplaints-wp.local/terms-of-use/">Terms of use</a></li>
+              <li id="menu-item-696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696"><a href="http://agedcarecomplaints-wp.local/website-privacy-notice/">Privacy</a></li>
+              <li id="menu-item-2333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2333"><a href="http://agedcarecomplaints-wp.local/about/contact-us/">Contact Us</a></li>
+            </ul></div>        </nav>
+      </div><!-- End container -->
+    </div>
   </footer>
 <?php endif; ?>
