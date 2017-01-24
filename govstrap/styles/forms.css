@@ -1,0 +1,257 @@
+/***********************************/
+/********** GForms plugin **********/
+/***********************************/
+.gform_wrapper {
+	margin: 5px 0;
+}
+.gform_wrapper label {
+	display: block;
+	padding-right: 20px;
+	padding-left:5px;
+	font-weight: bold;
+	margin-top: 5px;
+	color:#371461;
+}
+.gform_wrapper .ginput_complex label {
+	font-weight: normal;
+}
+.gform_wrapper fieldset {
+	border: none;
+	border-top: 1px solid #371461;
+	padding: 0 10px;
+}
+.gform_wrapper legend {
+	font-size: 1.3em;
+	padding: 8px;
+}
+h3.gform_title {
+	font-weight: normal;
+	font-size: 160%;
+}
+.gform_wrapper ul {
+	list-style-type: none;
+	margin: 0;
+}
+.gform_wrapper li {
+	margin: 10px 0;
+}
+.gform_wrapper input, 
+.gform_wrapper select, 
+.gform_wrapper textarea {
+	border: 1px solid #999;
+	padding: 4px;
+	min-width: 280px;
+}
+.gform_wrapper input:focus,
+.gform_wrapper select:focus
+.gform_wrapper textarea:focus {
+	outline: 1px solid #371461;
+}
+/* Checkboxes & radios */
+.gform_wrapper input[type="checkbox"],
+.gform_wrapper input[type="radio"] {
+	border: none;
+	clear: left;
+	float: left;
+	margin-top: 2px;	
+	min-width: 30px;
+}
+/* Submit button */
+.gform_footer input.button {
+	background-color: #371461;
+	border: none;
+	color: #FFF;
+	cursor: pointer;	
+	min-width: 100px;
+	padding: 5px 15px;
+	width: auto;
+	margin: 15px 15px;
+}
+.gform_footer input.button:hover,
+.gform_footer input.button:focus {
+	cursor: pointer;
+	background-color: #6a5288;
+	transition: background-color .5s;
+}
+/* Groups of checkboxes or radiobutton */
+.gfield_checkbox li,
+.gfield_radio li {
+	margin: 0;	
+}
+.gfield_checkbox li label,
+.gfield_radio li label {
+	font-weight: normal;	
+}
+/* Groups of text inputs */
+.ginput_complex label {
+	color: #333;
+	font-size: .8em;
+	margin: 0;
+	padding: 0 0 2px 0;
+}
+/* Messages */
+.gfield_description,
+.gfield_required,
+.ginput_counter { 
+	color: #555;
+	font-size: .8em;
+	font-weight: normal;
+	padding-left: 10px;
+}
+.gform_wrapper .validation_error {
+	background-color: #FDECEC;
+	padding: 5px;
+}
+.gfield_error {
+	background-color: #FDECEC;
+}
+.gfield_error .validation_message {
+	font-weight: bold;
+}
+.success {
+	background-color: #C0FFB4;
+	padding: 5px;
+}
+
+/* Text Fields */
+.gform_body input[type="text"]{
+	width: 50%;
+	background-color: #DCDDDC;
+	border: 2px solid transparent;
+	padding: 5px;
+	-webkit-transition: background-color 0.25s, border-color 0.25s;
+	transition: background-color 0.25s, border-color 0.25s;
+}
+
+.gform_body input[type="text"]:focus {
+	background-color: transparent;
+	border-color: #371461;
+	outline: none;
+}
+
+label.textinput-label {
+	width: 100%;
+	text-align: left;
+	bottom: 100%;
+	pointer-events: none;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, -2.3em, 0);
+	transform: translate3d(0, -2.3em, 0);
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s ;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	color:#555655;
+}
+.gform_body input[type="text"]:focus  + label.textinput-label, .textinput-label-filled {
+	-webkit-transform: translate3d(0, -4.3em, 0);
+	transform: translate3d(0, -4.3em, 0);
+	width: 100%;
+	color:#371461;
+}
+
+/* Select */
+select {
+	width: 52%;
+	background: #DCDDDC;
+	border: none !important;
+	margin-bottom: 13px;
+}
+
+/* Text Area */
+.gform_wrapper textarea {
+	width: 80%;
+	resize: none;
+	border:none;
+	background-color: #DCDDDC;
+	border: 2px solid transparent;
+	transition:all .5s;
+}
+
+.gform_wrapper textarea:focus {
+	background-color: transparent;
+	border-color: #371461;
+	outline: none;
+}
+
+.has_street {
+	margin-bottom: 25px;
+}
+
+/***********************************/
+/******** For the Honeypot *********/
+/***********************************/
+.gform_validation_container {
+	left: -9999em;
+	position: absolute;			
+}
+/***********************************/
+/********* Form_progress ***********/
+/***********************************/
+
+#form_progress {
+	float: right;
+	margin-top: -61px;
+}
+
+#form_progress p {
+	color: #A71C00;
+	padding: 4px 0;
+	font-size: .85em;
+}
+#form_progress button {
+	background-color: #371461;
+	border: none;
+	color: #FFF;
+	cursor: pointer;	
+	min-width: 100px;
+	padding: 5px 15px;
+	width: auto;
+	margin: 15px 15px;
+}
+#form_progress button:hover {
+	cursor: pointer;
+	background-color: #6a5288;
+	transition: background-color .5s;
+}
+
+/***********************************/
+/******** MailChimp Signup *********/
+/***********************************/
+
+.asterisk {
+	font-size:0.8em;	
+}
+
+.mc-field-group input {
+	width: 50%;
+	background-color: #DCDDDC;
+	border: 2px solid transparent;
+	padding: 5px;
+	margin-bottom:10px;
+	-webkit-transition: background-color 0.25s, border-color 0.25s;
+	transition: background-color 0.25s, border-color 0.25s;
+}
+
+.mc-field-group input:focus {
+	background-color: transparent;
+	border-color: #371461;
+	outline: none;
+}
+
+#mc-embedded-subscribe{
+	background-color: #371461;
+	border: none;
+	color: #FFF;
+	cursor: pointer;	
+	min-width: 100px;
+	padding: 5px 15px;
+	width: auto;
+	margin: 15px 0;
+}
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:focus {
+	cursor: pointer;
+	background-color: #6a5288;
+	transition: background-color .5s;
+}

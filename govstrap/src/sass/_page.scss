@@ -1,0 +1,142 @@
+/*******************
+  Common Page Style
+*******************/
+
+#main {
+  #page-content {
+    #block-system-main {
+      .content {
+        div.item-list {
+          padding: 20px 0;
+          border-top: 3px solid #edecec;
+          ul.pager {
+            float: left;
+            font-weight: 700;
+            font-size: 0.8125em;
+            line-height: 1em;
+            li {
+              margin: 0;
+              padding: 0;
+              &.pager-current {
+                margin: 0 10px 0 0;
+                padding: 8px 11px;
+              }
+              &.pager-ellipsis {
+                margin: 0 10px 0 0;
+                padding: 8px 11px;
+              }
+              a {
+                padding: 8px 11px;
+                margin: 0 10px 0 0;
+                color: #333;
+                border-radius: 0;
+                &:hover {
+                  color: #eee;
+                  background: #252525;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+        div.view-resources-list {
+          border-top: 1px solid #edf2f4;
+          border-bottom: 1px solid #edf2f4;
+          div.resource-link {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+          }
+          p {
+            margin-bottom: 1em;
+            padding: 0 19px 13px 45px;
+            font-size: 0.9285714285714286em;
+            line-height: 1.5;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  form {
+    &.webform-client-form {
+      margin: 20px 0;
+      padding: 0 15px;
+      background-color: #eee;
+      border: 1px solid #d3d3d3;
+      border-radius: 3px;
+      fieldset {
+        clear: both;
+        margin: 15px 0;
+        padding: 0;
+        font-size: 13px;
+        legend {
+          font-size: 20px;
+          line-height: 2.0em;
+          color: #646668;
+          border-bottom: 1px solid #d3d3d3;
+        }
+        label {
+          padding: 0 0 3px 0;
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*******************
+  Common Side Style
+*******************/
+
+aside {
+  &.right-bar {
+    margin-top: 1.6em;
+    div {
+      &.block-facetapi:first-child {
+        h2.block-title {
+          color: #fff;
+          font-weight: 400;
+          text-transform: none;
+          font-size: 1em;
+          line-height: 2.16667em;
+          position: relative;
+          margin: -1.5em 1em 1em 1em;
+          padding-top: 2em;
+          border-top: none;
+        }
+      }
+      &.block-facetapi {
+        h2.block-title {
+          color: #fff;
+          font-weight: 400;
+          text-transform: none;
+          font-size: 1em;
+          line-height: 2.16667em;
+          position: relative;
+          margin: 0 1em 1em 1em;
+          padding-top: 2em;
+          border-top: 1px solid #737576;
+        }
+        ul {
+          li {
+            a {
+              color: #c8e35a;
+              padding: 2px 0px 2px 21px;
+              font-weight: 400;
+              text-decoration: none;
+              display: block;
+              overflow: hidden;
+              background: transparent url(../img/filter-plus-tick-sprite.png) no-repeat scroll 2px 4px;
+              margin-right: 1em;
+              margin-bottom: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
