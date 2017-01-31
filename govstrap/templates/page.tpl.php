@@ -9,11 +9,11 @@
 
   <div id="top_nav">
     <div class="container">
-      <div class="menu-top-container"><ul id="menu-top" class="menu"><li id="menu-item-212" class="lang-item menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="http://agedcarecomplaints-wp.local/in-your-language/">In your Language</a></li>
-          <li id="menu-item-186" class="subscribe-item menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="http://agedcarecomplaints-wp.local/subscribe/">Subscribe</a></li>
-          <li id="menu-item-179" class="latest-item menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="http://agedcarecomplaints-wp.local/latest-news/">Latest News</a></li>
-          <li id="menu-item-228" class="faq-item menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="http://agedcarecomplaints-wp.local/faqs/">FAQs</a></li>
-          <li id="menu-item-415" class="order-item menu-item menu-item-type-post_type menu-item-object-page menu-item-415"><a href="http://agedcarecomplaints-wp.local/resources/order-resources/">Order Resources</a></li>
+      <div class="menu-top-container"><ul id="menu-top" class="menu"><li id="menu-item-212" class="lang-item menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="/in-your-language">In your Language</a></li>
+          <li id="menu-item-186" class="subscribe-item menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="/subscribe">Subscribe</a></li>
+          <li id="menu-item-179" class="latest-item menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="/latest-news">Latest News</a></li>
+          <li id="menu-item-228" class="faq-item menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="/faqs">FAQs</a></li>
+          <li id="menu-item-415" class="order-item menu-item menu-item-type-post_type menu-item-object-page menu-item-415"><a href="/resources/order-resources">Order Resources</a></li>
         </ul></div>
       <div class="search_box" role="search">
         <?php print $search_box; ?>
