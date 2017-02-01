@@ -51,6 +51,7 @@ function govstrap_js_alter(&$js) {
     'node/*/edit',
     'node/add',
     'node/add/*',
+    'node/*/panel_content',
   );
   $replace_jquery = TRUE;
   if (path_is_admin(current_path())) {
