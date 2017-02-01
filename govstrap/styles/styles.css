@@ -509,6 +509,7 @@ em {
 	padding: 10px;
 	display: inline-block;
 	left: auto;
+	width: 380px;
 }
 
 .sf-main-menu > .sf-depth-1 > ul li {

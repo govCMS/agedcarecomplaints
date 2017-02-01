@@ -4,67 +4,94 @@
  * page.tpl.php - Returns the HTML for a single Drupal page.
  */
 ?>
+<!-- Purple navigation bar on the top -->
+<div id="top_nav">
+  <div class="container">
+    <div class="menu-top-container">
+      <ul id="menu-top" class="menu">
+        <li id="menu-item-212"
+            class="lang-item menu-item menu-item-type-post_type menu-item-object-page menu-item-212">
+          <a href="/in-your-language">In your Language</a></li>
+        <li id="menu-item-186"
+            class="subscribe-item menu-item menu-item-type-post_type menu-item-object-page menu-item-186">
+          <a href="/subscribe">Subscribe</a></li>
+        <li id="menu-item-179"
+            class="latest-item menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
+          <a href="/latest-news">Latest News</a></li>
+        <li id="menu-item-228"
+            class="faq-item menu-item menu-item-type-post_type menu-item-object-page menu-item-228">
+          <a href="/faqs">FAQs</a></li>
+        <li id="menu-item-415"
+            class="order-item menu-item menu-item-type-post_type menu-item-object-page menu-item-415">
+          <a href="/resources/order-resources">Order Resources</a></li>
+      </ul>
+    </div>
+    <div class="search_box" role="search">
+      <?php print $search_box; ?>
+    </div><!-- End search_box -->
+  </div><!-- End container -->
+</div>
 
-
-
-  <div id="top_nav">
-    <div class="container">
-      <div class="menu-top-container"><ul id="menu-top" class="menu"><li id="menu-item-212" class="lang-item menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="/in-your-language">In your Language</a></li>
-          <li id="menu-item-186" class="subscribe-item menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="/subscribe">Subscribe</a></li>
-          <li id="menu-item-179" class="latest-item menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="/latest-news">Latest News</a></li>
-          <li id="menu-item-228" class="faq-item menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="/faqs">FAQs</a></li>
-          <li id="menu-item-415" class="order-item menu-item menu-item-type-post_type menu-item-object-page menu-item-415"><a href="/resources/order-resources">Order Resources</a></li>
-        </ul></div>
-      <div class="search_box" role="search">
-        <?php print $search_box; ?>
-      </div><!-- End search_box -->
-    </div><!-- End container -->
-  </div>
-
-  <header id="header" role="banner">
-    <div class="container">
-      <div class="logo">
-        <a href="http://agedcarecomplaints-wp.local/"><img src="http://agedcarecomplaints-wp.local/wp-content/themes/agedcarecomplaints/images/logo.png" alt="Australian Government, Aged Care Complaints"></a>
-      </div><!-- End logo -->
-      <div class="quote">
-        <img src="http://agedcarecomplaints-wp.local/wp-content/themes/agedcarecomplaints/images/quote.png" alt="Aged Care Complaints | ">
-      </div><!-- End quote -->
-      <div class="lodge-header">
-        <a href="http://agedcarecomplaints-wp.local/raising-a-complaint/lodge-a-complaint/"><div class="lodge-label">Lodge a complaint</div></a><div class="lodge-no">1800 550 552</div>        </div><!-- End lodge-header -->
-      <button id="_navigation" role="button" aria-label="Show and Hide Navigation Menu"><span class="lines"></span><span class="words screen-reader-text">Menu</span></button>
-      <div id="mob-nav">
-        <nav role="navigation" id="mainnav">
-          <div class="search_box" role="search">
-            <?php print $search_box; ?>
-          </div><!-- End search_box -->
-          <h2 role="heading" aria-level="2" class="screen-reader-text" id="mainnav-h">Main navigation</h2>
-          <div class="menu"><ul><li class="current_page_item"><a href="http://agedcarecomplaints-wp.local/">Home</a></li><li class="page_item page-item-54 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/about/">About</a><ul class="children"><li class="page_item page-item-2309"><a href="http://agedcarecomplaints-wp.local/about/contact-us/">Contact Us</a></li><li class="page_item page-item-60"><a href="http://agedcarecomplaints-wp.local/about/the-commisioner-and-the-staff/">The Complaints Commissioner and the Staff</a></li><li class="page_item page-item-2016"><a href="http://agedcarecomplaints-wp.local/about/media/">Media</a></li><li class="page_item page-item-62"><a href="http://agedcarecomplaints-wp.local/about/service-charter/">Service Charter</a></li><li class="page_item page-item-2228 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/about/freedom-of-information/">Freedom of Information</a><ul class="children"><li class="page_item page-item-2234"><a href="http://agedcarecomplaints-wp.local/about/freedom-of-information/foi-disclosure-log/">FOI Disclosure Log</a></li><li class="page_item page-item-2232 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/about/freedom-of-information/information-publication-scheme-ips/">Information Publication Scheme (IPS)</a><ul class="children"><li class="page_item page-item-2365"><a href="http://agedcarecomplaints-wp.local/about/freedom-of-information/information-publication-scheme-ips/archived-documents/">Archived documents</a></li></ul></li></ul></li><li class="page_item page-item-66 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/">Legislation and Policies</a><ul class="children"><li class="page_item page-item-747"><a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/notice-of-collection/">Notice of Collection</a></li><li class="page_item page-item-238"><a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/policy-for-managing-unreasonable-conduct/">Policy for Managing Unreasonable Conduct</a></li><li class="page_item page-item-672"><a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/privacy-policy/">Privacy Policy</a></li><li class="page_item page-item-2326"><a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/statement-of-expectations-and-intent/">Statement of Expectations and Intent</a></li><li class="page_item page-item-2353"><a href="http://agedcarecomplaints-wp.local/about/legislation-and-policies/inter-agency-agreements/">Inter-agency agreements</a></li></ul></li><li class="page_item page-item-64"><a href="http://agedcarecomplaints-wp.local/about/strategic-plan/">Strategic Plan</a></li><li class="page_item page-item-2923"><a href="http://agedcarecomplaints-wp.local/about/annual-report/">Annual Report</a></li></ul></li><li class="page_item page-item-213"><a href="http://agedcarecomplaints-wp.local/accessibility/">Accessibility</a></li><li class="page_item page-item-240"><a href="http://agedcarecomplaints-wp.local/copyright-disclaimer/">Copyright notice</a></li><li class="page_item page-item-121"><a href="http://agedcarecomplaints-wp.local/faqs/">FAQs</a></li><li class="page_item page-item-1195 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/feedback/">Feedback</a><ul class="children"><li class="page_item page-item-229"><a href="http://agedcarecomplaints-wp.local/feedback/customer-satisfaction-survey/">Customer satisfaction survey</a></li><li class="page_item page-item-1207"><a href="http://agedcarecomplaints-wp.local/feedback/feedback-about-our-resources/">Feedback about our resources</a></li><li class="page_item page-item-254"><a href="http://agedcarecomplaints-wp.local/feedback/feedback-form/">Website feedback survey</a></li></ul></li><li class="page_item page-item-209 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/in-your-language/">In your language</a><ul class="children"><li class="page_item page-item-462"><a href="http://agedcarecomplaints-wp.local/in-your-language/alyawarra/">Alyawarra</a></li><li class="page_item page-item-464"><a href="http://agedcarecomplaints-wp.local/in-your-language/arabic/">Arabic</a></li><li class="page_item page-item-470"><a href="http://agedcarecomplaints-wp.local/in-your-language/arrernte/">Arrernte</a></li><li class="page_item page-item-472"><a href="http://agedcarecomplaints-wp.local/in-your-language/croatian/">Croatian</a></li><li class="page_item page-item-480"><a href="http://agedcarecomplaints-wp.local/in-your-language/dutch/">Dutch</a></li><li class="page_item page-item-488"><a href="http://agedcarecomplaints-wp.local/in-your-language/german/">German</a></li><li class="page_item page-item-496"><a href="http://agedcarecomplaints-wp.local/in-your-language/greek/">Greek</a></li><li class="page_item page-item-508"><a href="http://agedcarecomplaints-wp.local/in-your-language/hungarian/">Hungarian</a></li><li class="page_item page-item-466"><a href="http://agedcarecomplaints-wp.local/in-your-language/italian/">Italian</a></li><li class="page_item page-item-478"><a href="http://agedcarecomplaints-wp.local/in-your-language/luritja/">Luritja</a></li><li class="page_item page-item-474"><a href="http://agedcarecomplaints-wp.local/in-your-language/macedonia/">Macedonia</a></li><li class="page_item page-item-482"><a href="http://agedcarecomplaints-wp.local/in-your-language/maltese/">Maltese</a></li><li class="page_item page-item-486"><a href="http://agedcarecomplaints-wp.local/in-your-language/pitjantjatjara/">Pitjantjatjara</a></li><li class="page_item page-item-490"><a href="http://agedcarecomplaints-wp.local/in-your-language/polish/">Polish</a></li><li class="page_item page-item-502"><a href="http://agedcarecomplaints-wp.local/in-your-language/russian/">Russian</a></li><li class="page_item page-item-510"><a href="http://agedcarecomplaints-wp.local/in-your-language/serbian/">Serbian</a></li><li class="page_item page-item-468"><a href="http://agedcarecomplaints-wp.local/in-your-language/spanish/">Spanish</a></li><li class="page_item page-item-476"><a href="http://agedcarecomplaints-wp.local/in-your-language/tagalog/">Tagalog</a></li><li class="page_item page-item-494"><a href="http://agedcarecomplaints-wp.local/in-your-language/torres-strait-islander-creole/">Torres Strait Islander Creole</a></li><li class="page_item page-item-484"><a href="http://agedcarecomplaints-wp.local/in-your-language/traditional-chinese/">Traditional Chinese</a></li><li class="page_item page-item-492"><a href="http://agedcarecomplaints-wp.local/in-your-language/turkish/">Turkish</a></li><li class="page_item page-item-504"><a href="http://agedcarecomplaints-wp.local/in-your-language/vietnamese/">Vietnamese</a></li><li class="page_item page-item-506"><a href="http://agedcarecomplaints-wp.local/in-your-language/warlpiri/">Warlpiri</a></li></ul></li><li class="page_item page-item-75"><a href="http://agedcarecomplaints-wp.local/latest-news/">Latest News</a></li><li class="page_item page-item-102 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/raising-a-complaint/">Making a complaint</a><ul class="children"><li class="page_item page-item-124 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/raising-a-complaint/lodge-a-complaint/">Lodge a Complaint</a><ul class="children"><li class="page_item page-item-127"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/lodge-a-complaint/online-complaints-forms/">Online Complaints Form</a></li></ul></li><li class="page_item page-item-446"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/the-complaints-process/">The Complaints process</a></li><li class="page_item page-item-108"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/how-to-raise-an-effective-complaint/">How to make an Effective Complaint</a></li><li class="page_item page-item-106"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/services-available-to-help-you-to-make-a-complaint/">Services Available to help you to make a complaint</a></li><li class="page_item page-item-112"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/referrals-to-other-bodieswho-we-work-with/">Referrals to other organisations we work with</a></li><li class="page_item page-item-110"><a href="http://agedcarecomplaints-wp.local/raising-a-complaint/aged-care-complaints-guidelines/">Aged Care Complaints Guidelines</a></li></ul></li><li class="page_item page-item-129 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/other-resources/">Other Resources</a><ul class="children"><li class="page_item page-item-2243"><a href="http://agedcarecomplaints-wp.local/other-resources/information-publication-scheme-aged-care-complaints-commissioner-agency-plan/">Information Publication Scheme – Aged Care Complaints Commissioner Agency Plan</a></li></ul></li><li class="page_item page-item-78 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/">Resources</a><ul class="children"><li class="page_item page-item-83 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/i-have-a-concern/">I have a concern resources</a><ul class="children"><li class="page_item page-item-1211"><a href="http://agedcarecomplaints-wp.local/resources/i-have-a-concern/booklet/">Booklet I have a concern</a></li><li class="page_item page-item-630"><a href="http://agedcarecomplaints-wp.local/resources/i-have-a-concern/brochure/">Brochure I have a concern</a></li></ul></li><li class="page_item page-item-731 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/factsheets/">Fact sheets</a><ul class="children"><li class="page_item page-item-1871"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/fact-sheet-the-service-we-offer-you/">Fact sheet – The service we offer you</a></li><li class="page_item page-item-1364"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/factsheet-resolving-concerns-about-aged-care/">Fact sheet – Resolving concerns about aged care</a></li><li class="page_item page-item-1900"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/fact-sheet-how-aged-care-advocacy-can-help-you/">Fact sheet – How aged care advocacy can help you</a></li><li class="page_item page-item-738"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/factsheet-referrals-to-other-organisations/">Fact sheet – Referrals to other organisations</a></li><li class="page_item page-item-947"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/fact-sheet-service-provider-resolution/">Fact sheet – Service provider resolution</a></li><li class="page_item page-item-946"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/fact-sheet-what-is-a-direction/">Fact sheet – What is a direction?</a></li><li class="page_item page-item-742"><a href="http://agedcarecomplaints-wp.local/resources/factsheets/fact-sheet-review-rights/">Fact sheet – Review rights</a></li></ul></li><li class="page_item page-item-438 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/">Community language resources</a><ul class="children"><li class="page_item page-item-812"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/arabic-resources/">Arabic resources</a></li><li class="page_item page-item-2464"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/armenian-resources/">Armenian resources</a></li><li class="page_item page-item-814"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/traditional-chinese-resources/">Chinese (Traditional) resources</a></li><li class="page_item page-item-816"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/croatian-resources/">Croatian resources</a></li><li class="page_item page-item-820"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/dutch-resources/">Dutch resources</a></li><li class="page_item page-item-2470"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/french-resources/">French resources</a></li><li class="page_item page-item-822"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/german-resources/">German resources</a></li><li class="page_item page-item-824"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/greek-resources/">Greek resources</a></li><li class="page_item page-item-2475"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/hindi-resources/">Hindi resources</a></li><li class="page_item page-item-826"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/hungarian-resources/">Hungarian resources</a></li><li class="page_item page-item-828"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/italian-resources/">Italian resources</a></li><li class="page_item page-item-2480"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/korean-resources/">Korean resources</a></li><li class="page_item page-item-2485"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/latvian-resources/">Latvian resources</a></li><li class="page_item page-item-830"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/macedonian-resources/">Macedonian resources</a></li><li class="page_item page-item-832"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/maltese-resources/">Maltese resources</a></li><li class="page_item page-item-834"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/polish-resources/">Polish resources</a></li><li class="page_item page-item-2490"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/portuguese-resources/">Portuguese resources</a></li><li class="page_item page-item-836"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/russian-resources/">Russian resources</a></li><li class="page_item page-item-838"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/serbian-resources/">Serbian resources</a></li><li class="page_item page-item-840"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/spanish-resources/">Spanish resources</a></li><li class="page_item page-item-842"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/tagalog-resources/">Tagalog resources</a></li><li class="page_item page-item-844"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/turkish-resources/">Turkish resources</a></li><li class="page_item page-item-2495"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/ukrainian-resources/">Ukrainian resources</a></li><li class="page_item page-item-846"><a href="http://agedcarecomplaints-wp.local/resources/resources-in-other-languages/vietnamese-resources/">Vietnamese resources</a></li></ul></li><li class="page_item page-item-2416 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/posters/">Posters</a><ul class="children"><li class="page_item page-item-635"><a href="http://agedcarecomplaints-wp.local/resources/posters/do-you-have-a-concern/">Poster Do you have a concern?</a></li><li class="page_item page-item-2421"><a href="http://agedcarecomplaints-wp.local/resources/posters/four-key-things-aged-care-staff/">Poster – Aged care complaints: Four key things aged care staff should know</a></li><li class="page_item page-item-2436"><a href="http://agedcarecomplaints-wp.local/resources/posters/four-key-things-for-advocates/">Poster – Aged care complaints: Four key things for advocates to know</a></li></ul></li><li class="page_item page-item-260 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/">Indigenous language resources</a><ul class="children"><li class="page_item page-item-923"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/a-little-yarn-goes-a-long-way-brochure/">A Little Yarn Goes a Long Way – Brochure</a></li><li class="page_item page-item-926"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/a-little-yarn-goes-a-long-way-fact-sheet/">A Little Yarn Goes a Long Way – Fact sheet</a></li><li class="page_item page-item-930"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/a-little-yarn-goes-a-long-way-flip-chart/">A Little Yarn Goes A Long Way – Flip chart</a></li><li class="page_item page-item-762"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/alyawarra/">Alyawarra</a></li><li class="page_item page-item-760"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/arrernte/">Arrernte</a></li><li class="page_item page-item-764"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/luritja/">Luritja</a></li><li class="page_item page-item-766"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/pitjantjatjara/">Pitjantjatjara</a></li><li class="page_item page-item-758"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/torres-strait-islander-creole/">Torres Strait Islander Creole</a></li><li class="page_item page-item-768"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/warlpiri/">Warlpiri</a></li><li class="page_item page-item-318"><a href="http://agedcarecomplaints-wp.local/resources/information-for-indigenous-australians/audio-and-video-for-aboriginal-and-torres-strait-islander-people-english/">Video for Aboriginal and Torres Strait Islander people (English)</a></li></ul></li><li class="page_item page-item-81 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/">Better Practice Guide to Complaint Handling</a><ul class="children"><li class="page_item page-item-607"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/choose-your-own-adventure-dorothys-story/">‘Choose your own adventure’ interactive learning exercises – Dorothy’s Story</a></li><li class="page_item page-item-606"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/choose-your-own-adventure-terrys-story/">‘Choose your own adventure’ interactive learning exercises – Terry’s Story</a></li><li class="page_item page-item-605"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/choose-your-own-adventure-toms-story/">‘Choose your own adventure’ interactive learning exercises – Tom’s Story</a></li><li class="page_item page-item-585"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/assisted-complaints-resolution-external-resolution-mechanisms/">Assisted complaints resolution (external resolution mechanisms)</a></li><li class="page_item page-item-624"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/case-studieslearning-exercises/">Case Studies/Learning Exercises</a></li><li class="page_item page-item-580"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/complaints-and-workplace-culture/">Complaints and Workplace Culture</a></li><li class="page_item page-item-583"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/staff-journey/">Staff Journey</a></li><li class="page_item page-item-278"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/templates-forms-letters-and-tools/">Templates, forms, letters and tools</a></li><li class="page_item page-item-1510"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/the-complaints-journey/">The Complaints Journey</a></li><li class="page_item page-item-577"><a href="http://agedcarecomplaints-wp.local/resources/better-practice-guide-to-complaints-handling-in-aged-care/the-stages-of-complaint-handling/">The Stages of Complaint Handling</a></li></ul></li><li class="page_item page-item-1026 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/">Industry translated resources</a><ul class="children"><li class="page_item page-item-852"><a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/simplified-chinese-quick-reference-cards/">Chinese (Simplified) quick reference cards for aged care staff</a></li><li class="page_item page-item-854"><a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/traditional-chinese-reference-cards/">Chinese (Traditional) quick reference cards for aged care staff</a></li><li class="page_item page-item-848"><a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/hindi-quick-reference-cards/">Hindi quick reference cards for aged care staff</a></li><li class="page_item page-item-850"><a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/italian-quick-reference-cards/">Italian quick reference cards for aged care staff</a></li><li class="page_item page-item-856"><a href="http://agedcarecomplaints-wp.local/resources/industry-translated-resources/tagalog-quick-reference-cards/">Tagalog quick reference cards for aged care staff</a></li></ul></li><li class="page_item page-item-271 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/resources/industry-feedback-alerts/">Industry Feedback Alerts</a><ul class="children"><li class="page_item page-item-1669"><a href="http://agedcarecomplaints-wp.local/resources/industry-feedback-alerts/archived-industry-information/">Archived Industry information</a></li></ul></li><li class="page_item page-item-1631"><a href="http://agedcarecomplaints-wp.local/resources/what-can-we-learn-reports-2/">What can we learn? Reports</a></li><li class="page_item page-item-295"><a href="http://agedcarecomplaints-wp.local/resources/further-reading/">Further reading</a></li><li class="page_item page-item-2394"><a href="http://agedcarecomplaints-wp.local/resources/speeches-and-presentations/">Speeches and Presentations</a></li><li class="page_item page-item-258"><a href="http://agedcarecomplaints-wp.local/resources/order-resources/">Order Resources</a></li></ul></li><li class="page_item page-item-176"><a href="http://agedcarecomplaints-wp.local/sitemap/">Sitemap</a></li><li class="page_item page-item-132"><a href="http://agedcarecomplaints-wp.local/subscribe/">Subscribe</a></li><li class="page_item page-item-1344"><a href="http://agedcarecomplaints-wp.local/terms-of-use/">Terms of use</a></li><li class="page_item page-item-693"><a href="http://agedcarecomplaints-wp.local/website-privacy-notice/">Website privacy notice</a></li><li class="page_item page-item-172"><a href="http://agedcarecomplaints-wp.local/home-page-b/">Welcome to the Aged Care Complaints Commissioner site</a></li><li class="page_item page-item-93 page_item_has_children"><a href="javascript:void(0)" class="show-hide" style="display: none;"><span class="offleft">Show/hide children</span></a> <a href="http://agedcarecomplaints-wp.local/your-rights/">Your Rights</a><ul class="children"><li class="page_item page-item-299"><a href="http://agedcarecomplaints-wp.local/your-rights/complain-about-our-service-delivery/">Complain about our service delivery</a></li><li class="page_item page-item-96"><a href="http://agedcarecomplaints-wp.local/your-rights/rights-and-responsibilities-residential-care-and-home-care/">Rights and Responsibilities – Residential Care and Home Care</a></li><li class="page_item page-item-98"><a href="http://agedcarecomplaints-wp.local/your-rights/review-rights/">Review Rights</a></li><li class="page_item page-item-247"><a href="http://agedcarecomplaints-wp.local/your-rights/rights-of-other-parties-involved-in-a-complaint/">Rights of ‘other parties’ involved in a complaint</a></li><li class="page_item page-item-426"><a href="http://agedcarecomplaints-wp.local/your-rights/further-aged-care-information/">Further aged care information</a></li></ul></li></ul></div>
-        </nav>
-      </div><!-- End mob-nav -->
-    </div> <!-- End container -->
-  </header>
-
-  <div id="main-nav">
-    <div class="container">
-      <nav role="navigation">
-        <div class="menu-main-container">
+<header id="header" role="banner">
+  <div class="container">
+    <div class="logo">
+      <a href="http://agedcarecomplaints-wp.local/"><img
+          src="http://agedcarecomplaints-wp.local/wp-content/themes/agedcarecomplaints/images/logo.png"
+          alt="Australian Government, Aged Care Complaints"></a>
+    </div><!-- End logo -->
+    <div class="quote">
+      <img
+        src="http://agedcarecomplaints-wp.local/wp-content/themes/agedcarecomplaints/images/quote.png"
+        alt="Aged Care Complaints | ">
+    </div><!-- End quote -->
+    <div class="lodge-header">
+      <a
+        href="http://agedcarecomplaints-wp.local/raising-a-complaint/lodge-a-complaint/">
+        <div class="lodge-label">Lodge a complaint</div>
+      </a>
+      <div class="lodge-no">1800 550 552</div>
+    </div><!-- End lodge-header -->
+    <button id="_navigation" role="button"
+            aria-label="Show and Hide Navigation Menu"><span
+        class="lines"></span><span class="words screen-reader-text">Menu</span>
+    </button>
+    <div id="mob-nav">
+      <nav role="navigation" id="mainnav">
+        <div class="search_box" role="search">
+          <?php print $search_box; ?>
+        </div><!-- End search_box -->
+        <h2 role="heading" aria-level="2" class="screen-reader-text"
+            id="mainnav-h">Main navigation</h2>
+        <div class="menu">
           <?php print render($page['navigation']); ?>
         </div>
       </nav>
-    </div>
-    <!-- End container -->
+    </div><!-- End mob-nav -->
+  </div> <!-- End container -->
+</header>
+
+<div id="main-nav">
+  <div class="container">
+    <nav role="navigation">
+      <div class="menu-main-container">
+        <?php print render($page['navigation']); ?>
+      </div>
+    </nav>
   </div>
+  <!-- End container -->
+</div>
 
 <main class="container">
   <?php if (!empty($page['highlighted'])): ?>
-      <div class="row">
-        <div class="col-md-12 col-no-padding">
-          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-        </div>
+    <div class="row">
+      <div class="col-md-12 col-no-padding">
+        <div
+          class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       </div>
+    </div>
   <?php endif; ?>
   <div id="main" class="main-container row">
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+    <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="sidebar" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -73,56 +100,58 @@
 
     <div id="content" class="content">
       <article>
-      <?php print $messages; ?>
-      <div class="title-block">
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-      </div>
-
-      <section id="main-content-section" class="<?php print $content_column_class; ?> content-section" role="main">
-        <a id="main-content"></a>
-        <?php if (!empty($tabs)): ?>
-          <?php print render($tabs); ?>
-        <?php endif; ?>
-        <?php if (!empty($page['help'])): ?>
-          <?php print render($page['help']); ?>
-        <?php endif; ?>
-        <?php if (!empty($action_links)): ?>
-          <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
-        <div id="page-content">
-          <?php print render($page['content']); ?>
+        <?php print $messages; ?>
+        <div class="title-block">
+          <?php print render($title_prefix); ?>
+          <?php if (!empty($title)): ?>
+            <h1 class="page-header"><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
         </div>
-      </section>
-      <?php if (!empty($page['sidebar_second']) || !empty($page['sidebar_second_below'])): ?>
-        <aside class="col-sm-3 right-bar" role="complementary">
-          <?php if (!empty($page['sidebar_second'])): ?>
-            <?php print render($page['sidebar_second']); ?>
+
+        <section id="main-content-section"
+                 class="<?php print $content_column_class; ?> content-section"
+                 role="main">
+          <a id="main-content"></a>
+          <?php if (!empty($tabs)): ?>
+            <?php print render($tabs); ?>
           <?php endif; ?>
-          <?php if (!empty($page['sidebar_second_below'])): ?>
-            <?php print render($page['sidebar_second_below']); ?>
+          <?php if (!empty($page['help'])): ?>
+            <?php print render($page['help']); ?>
           <?php endif; ?>
-        </aside>  <!-- /#sidebar-second -->
-      <?php endif; ?>
+          <?php if (!empty($action_links)): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+          <div id="page-content">
+            <?php print render($page['content']); ?>
+          </div>
+        </section>
+        <?php if (!empty($page['sidebar_second']) || !empty($page['sidebar_second_below'])): ?>
+          <aside class="col-sm-3 right-bar" role="complementary">
+            <?php if (!empty($page['sidebar_second'])): ?>
+              <?php print render($page['sidebar_second']); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['sidebar_second_below'])): ?>
+              <?php print render($page['sidebar_second_below']); ?>
+            <?php endif; ?>
+          </aside>  <!-- /#sidebar-second -->
+        <?php endif; ?>
       </article>
     </div>
   </div>
 </main>
 
 <?php if (!empty($page['footer_menu'])): ?>
-    <div id="footer-menu" class="container">
-      <div class="row">
-        <div class="col-md-9">
-          <?php print render($page['footer_menu']); ?>
-        </div>
-        <div class="col-md-3">
-          <div class="print-friendly">This site is print friendly</div>
-        </div>
+  <div id="footer-menu" class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <?php print render($page['footer_menu']); ?>
+      </div>
+      <div class="col-md-3">
+        <div class="print-friendly">This site is print friendly</div>
       </div>
     </div>
+  </div>
 <?php endif; ?>
 
 <?php if (!empty($page['footer'])): ?>
@@ -132,13 +161,38 @@
       <div class="container">
         <p>Copyright © Commonwealth of Australia</p>
         <nav role="navigation">
-          <div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://agedcarecomplaints-wp.local/sitemap/">Sitemap</a></li>
-              <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://agedcarecomplaints-wp.local/accessibility/">Accessibility</a></li>
-              <li id="menu-item-243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243"><a href="http://agedcarecomplaints-wp.local/copyright-disclaimer/">Copyright</a></li>
-              <li id="menu-item-1346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346"><a href="http://agedcarecomplaints-wp.local/terms-of-use/">Terms of use</a></li>
-              <li id="menu-item-696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696"><a href="http://agedcarecomplaints-wp.local/website-privacy-notice/">Privacy</a></li>
-              <li id="menu-item-2333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2333"><a href="http://agedcarecomplaints-wp.local/about/contact-us/">Contact Us</a></li>
-            </ul></div>        </nav>
+          <div class="menu-footer-container">
+            <ul id="menu-footer" class="menu">
+              <li id="menu-item-185"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185">
+                <a
+                  href="/sitemap/">Sitemap</a>
+              </li>
+              <li id="menu-item-216"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
+                <a href="/accessibility/">Accessibility</a>
+              </li>
+              <li id="menu-item-243"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243">
+                <a
+                  href="/copyright-disclaimer/">Copyright</a>
+              </li>
+              <li id="menu-item-1346"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346">
+                <a href="/terms-of-use/">Terms
+                  of use</a></li>
+              <li id="menu-item-696"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696">
+                <a
+                  href="/website-privacy-notice/">Privacy</a>
+              </li>
+              <li id="menu-item-2333"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2333">
+                <a href="/about/contact-us/">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+        </nav>
       </div><!-- End container -->
     </div>
   </footer>
