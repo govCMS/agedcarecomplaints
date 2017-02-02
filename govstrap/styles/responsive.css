@@ -83,11 +83,14 @@
 	float:none;
 	margin-top:0px;
 	background: #371461;
-	padding: 10px;
 }
 
 #mob-nav .menu {
 	float: none;
+}
+
+#mob-nav .sf-main-menu {
+	padding-top: 0;
 }
 
 #mob-nav .search_box input[type='search'] {
@@ -139,9 +142,9 @@
 #mainnav .menu > ul > li {
 	float: none;
 	border-bottom: none;
-}	
+}
 
-#mainnav .menu > ul > li a {
+#mob-nav .menu ul#superfish-1 > li a {
 	border-top: 1px solid #f2f2f2;
 	color: #8f8f8f;
 	height: auto;
@@ -160,19 +163,19 @@
 	background-color: #F6F5F2;
 }	
 
-#mainnav .menu > ul > li:first-child > a {
+#mob-nav > #mainnav > .menu > .block > .content. > menu > ul > li.first > a {
    	background: #959595 url(../images/home-mobile.png) 14px center no-repeat;
 	background-position: 97.5% 41%;
 	background-size: auto 56%;
-	color:#FFF;
+	color:#FFF !important;
 	border:none;
 }
 
-#mainnav .menu > ul > li:first-child > a:hover,
-#mainnav .menu > ul > li:first-child > a:focus {
+#mob-nav > #mainnav > .menu > .block > .content. > menu > ul > li.first > a:hover,
+#mob-nav > #mainnav > .menu > .block > .content. > menu > ul > li.first > a:focus {
 	background: #F6F5F2 url(../images/home.png) 14px center no-repeat;
 	background-size: auto 56%;
-	color: #000;
+	color: #000 !important;
 }	
 
 #mainnav .menu > ul > li.current-menu-item,
@@ -317,19 +320,23 @@
 -------------------------------------------------------------- */
 
 @media all and (max-width: 950px) {
-	
-	body {
-			
-	}
-	
+
 	#_navigation {
 		display:block;
 	}
-	
-	#top_nav, #menu-main, #lodge-btn, .lodge-label, .quicklinks, #footer, #crumbs, h1.title, #readspeaker_button  {
+
+	#mob-nav .sf-main-menu > li {
+		width: 100%;
+	}
+
+	#main-nav, #top_nav, #menu-main, #lodge-btn, .lodge-label, .quicklinks, #footer, #crumbs, h1.title, #readspeaker_button  {
 		display:none;	
 	}
-	
+
+	.sf-main-menu > .sf-depth-1 > ul.mob-sub-menu {
+		margin-top: 1em;
+	}
+
 	.lodge-header {
 		float:none;	
 	}
@@ -342,7 +349,11 @@
 		font-size: 134%;
     	color: #f0523f;
 	}
-	
+
+	.sidebar ul li a {
+		padding: 8px 10px;
+	}
+
 	.container {
 		width:100%;	
 	}
@@ -367,7 +378,7 @@
 		padding-top:0px;	
 		background-image:none;
 		background:#FFF;
-		height:34px;
+		height:70px;
 	}
 	
 	.logo, .quote {

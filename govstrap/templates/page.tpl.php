@@ -36,12 +36,12 @@
   <div class="container">
     <div class="logo">
       <a href="/"><img
-          src="/sites/g/files/net2426/themes/site/govstrap/images/logo.png"
+          src="<?php print $base_path . path_to_theme(); ?>/images/logo.png"
           alt="Australian Government, Aged Care Complaints"></a>
     </div><!-- End logo -->
     <div class="quote">
       <img
-        src="/sites/g/files/net2426/themes/site/govstrap/images/quote.png"
+        src="<?php print $base_path . path_to_theme(); ?>/images/quote.png"
         alt="Aged Care Complaints | ">
     </div><!-- End quote -->
     <div class="lodge-header">

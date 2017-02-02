@@ -7,13 +7,13 @@ jQuery(function($) {
         $("table tr:odd").addClass("zebra");
 
         // Add the Mobile Navigation show/hide expanders
-        $('#mainnav ul > li').each(function() {
+        $('#mov-nav .sf-main-menu ul > li').each(function() {
             if ($(this).children('ul').length > 0) {
                 $(this).prepend('<a href="javascript:void(0)" class="show-hide"><span class="offleft">Show/hide children</span></a> ');
             }
         });
         // and hide them for now
-        $('#mainnav .show-hide').hide();
+        $('#mov-nav .sf-main-menu .show-hide').hide();
 
         // Mobile Navigation show/hide expanders
         $('.show-hide').click(function(){
@@ -74,7 +74,7 @@ jQuery(function($) {
         }
 
     }); // End Document ready
-    
+
 //Main Menu hover
     $('#menu-main li').hoverIntent({
         over: makeTall,
@@ -91,13 +91,13 @@ jQuery(function($) {
             $('#mob-nav').slideUp(500, 'easeInSine', function(){
                 $(this).removeClass('active');
                 $('#mob-nav li ul').removeClass('mob-sub-menu').addClass('sub-menu');
-                $('#mainnav .show-hide').hide();
+                $('#mov-nav .sf-main-menu .show-hide').hide();
             });
         }
         else {
             $(this).addClass('active');
             $('#mob-nav li ul').removeClass('sub-menu').addClass('mob-sub-menu');
-            $('#mainnav .show-hide').show();
+            $('#mov-nav .sf-main-menu .show-hide').show();
             $('#mob-nav').addClass('active').slideDown(500, 'easeInSine');
         }
     });
