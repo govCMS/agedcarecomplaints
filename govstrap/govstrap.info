@@ -40,7 +40,12 @@ settings[govstrap_rebuild_registry] = 0
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Javascript.
 ;;;;;;;;;;;;;;;;;;;;;
-
+scripts[] = js/html5shiv.js
+scripts[] = js/jquery.cycle.lite.js
+scripts[] = js/jquery.easing.js
+scripts[] = js/jquery.fittext.js
+scripts[] = js/jquery.fitvids.js
+scripts[] = js/jquery.hoverIntent.js
 scripts[] = js/scripts.js
 
 ;;;;;;;;;;;;;;;;;;;;;
